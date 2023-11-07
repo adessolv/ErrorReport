@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using ErrorReport.Model;
 
 namespace ErrorReport.Data
@@ -14,6 +10,6 @@ namespace ErrorReport.Data
         {
         }
 
-        public DbSet<ErrorReport.Model.Report> Report { get; set; } = default!;
+        public DbSet<Report> Report { get; set; } = default!;
     }
 }
